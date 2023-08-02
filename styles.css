@@ -1,0 +1,176 @@
+/*font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #F9F7F7;
+  color: #112D4E;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  display: flex;
+  background-color: #DBE2EF;
+  height: 50px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-logo {
+  padding-left: 20px;
+  height: 30px;
+}
+
+.resume, .hobbies, .contact {
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+.top-container {
+  display: flex;
+  background-color: #3F72AF;
+  height: 500px;
+  color: #F9F7F7;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.me {
+  height: 325px;
+  width: 325px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 55% 45%;
+}
+
+.middle-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+}
+
+.html5, .css3{
+  height: 130px;
+}
+
+.bootstrap {
+  height: 95px;
+  padding-top: 23px;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  background-color: #DBE2EF;
+  /*height?*/
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials, .copyright {
+  padding: 20px;
+  margin: 0;
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+.github, .linkedin {
+  margin: 0 15px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+
+@media (max-width: 680px){
+  
+  body {
+    min-width: 375px;
+  }
+
+  .external a {
+    display: none;
+  }
+
+  .hamburger-menu {
+    width: 50px;
+    height: 50px;
+    position: relative;
+  }
+
+  .hamburger-menu span {
+    height: 3px;
+    width: 30px;
+    background-color: #112D4E;
+    display: block;
+    position: absolute;
+    top: 12px;
+  }
+
+  span::before, span::after {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: #112D4E;
+    content: "";
+    position: absolute;
+  }
+
+  span::before {
+    top: 10px;
+  }
+
+  span::after {
+    top: 20px;
+  }
+  
+  .top-container {
+    display: block;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0;
+    padding-top: 60px;
+    font-size: 28px;
+  }
+
+  .introduction h2 {
+    font-size: 20px;;
+  }
+
+  .me {
+    height: 250px;
+    width: 250px;
+    margin-top: 30px;
+  }
+
+  .middle-container {
+    display: block;
+    text-align: center;
+    height: 200px;
+  }
+
+  .middle-container h2 {
+    padding-top: 20px;
+  }
+
+  .html5, .css3 {
+    height: 75px;
+    margin-right: 25px;
+  }
+
+  .bootstrap {
+    height: 60px;
+  }
+}
